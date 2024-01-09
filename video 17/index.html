@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+            background-color: cyan;
+        }
+
+        /* Class Selector */
+        .red {
+            background-color: rgb(233, 113, 113);
+        }
+
+        /* id Selector */
+        #yellow {
+            color: blue;
+        }
+
+        /* Child Selestor [ Direct Child p asel tarach apply honar okay ]*/ 
+        form > p {
+            background-color: aquamarine;
+        }
+
+        /* Descendant Selectors [Konta pn Child p pahije okay] */
+        article p {
+            background-color: chartreuse;
+        }
+
+        /* Universal Selectors  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        i am sujal & My hobby is Coding
+    </div>
+
+    <div class="red">
+        My name is sujal & i am 20 Years Old
+    </div>
+
+    <span id="yellow">
+        i am Very Happy Now
+    </span>
+
+    <form>
+      <span>  
+        <p> This is My Speaker. </p>
+        <p> This is My Keybord. </p>
+     </span>
+    </form>
+
+
+    <article><span>
+        <p> This is My Speaker. </p>
+        <p> This is My Keybord. </p>
+    </span>
+    </article>
+
+    
+    
+</body>
+</html>

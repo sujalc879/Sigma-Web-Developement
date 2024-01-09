@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Display Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            padding: 45px;
+            display: inline-block;
+            margin: 48px;
+            width: 500px;
+            display: grid;
+            justify-content:center;
+        }
+
+        .box1 {
+            /* display: none; [ pura gayab hoga ]*/ 
+            /* visibility: hidden; [ gayab hoga but uski jagah nhi chodega ] */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1 ">
+        i am a box
+    </div>
+    <div class="box ">it is also a nice box</div>
+
+    <span>i am a good </span>
+    <span>boy</span>
+</body>
+
+</html>
