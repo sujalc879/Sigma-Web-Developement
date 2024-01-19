@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Query</title>
+    <style>
+        body {
+            background-color: rgb(196, 76, 76);
+        }
+
+        @media  screen and (orientation: landscape ) {
+            body {
+            border: 2px solid black;
+        }
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+
+                background-color: rgb(120, 120, 172);
+                color: aqua;
+            }
+
+            div {
+                flex-direction: column;
+            }
+        }
+
+           
+            div {
+                display: flex;
+                
+            }
+
+
+        .container {
+           
+            height: 355px;
+            width: 156px;
+            border: 2px solid black;
+
+            background-color: aqua;
+            padding: 3px;
+            margin: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        Hey I am the Element From The Css
+   
+
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+
+
+</div>
+</body>
+
+</html>
