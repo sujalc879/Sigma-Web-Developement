@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css Selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: aqua;
+
+           [ It Means yachya parents cha first child okay ]
+        } */
+
+        /* .boxes::first-line {
+            background-color: aqua;
+            color: red;
+
+         [ it means yachi first line ]
+        } */
+
+        /* .boxes * {
+            border: 2px solid black;
+            color: blue;
+        }
+
+        p, a, .box, [data-color="primary"] {
+            padding-top: 35px;
+            
+        } */
+
+
+        /* .box:nth-child(odd) {
+            background-color: yellow;
+        } */
+
+        /* .box:nth-last-child(2) {
+            background-color: yellowgreen;
+        } */
+
+        /* .boxes::before {
+            content: "Sujal Hey";
+        }
+        [ 1. It is called pseudo Elements 
+          2. we can use after property also like before
+          3. we can use Both at a time ] */
+
+          .box:first-child::selection {
+            color: aqua;
+            background-color: black;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, totam. Dignissimos, libero ipsam! Possimus itaque autem voluptatem debitis nihil, similique fuga, eligendi illo nobis repellendus sit. Corrupti, distinctio? Odit aut quibusdam modi, laboriosam esse impedit quam magnam, pariatur veritatis, iste quisquam accusantium quas asperiores. Soluta.</div>
+        <div class="box">Hey i am box 2</div>
+        <div class="box">Hey i am box 3</div>
+
+
+
+
+
+    </div>
+</body>
+</html>

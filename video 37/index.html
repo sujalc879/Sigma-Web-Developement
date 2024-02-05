@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Excercise 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+
+        :root {
+            --header: rgb(255, 133, 235);
+            --body: rgb(0, 0, 0);
+            --motha: rgb(16, 139, 33);
+            --chota1: rgb(240, 120, 23);
+            --chota2: rgb(15, 143, 218);
+            --circle: rgb(201, 24, 24);
+            --footer: rgb(255, 255, 255);
+
+        }
+
+        body {
+            overflow-x: hidden;
+            background-color: var(--body);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .nav {
+            width: 100vw;
+            height: 100px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: var(--header);
+            position: sticky;
+            top: 0px;
+        
+
+        }
+
+        .motha {
+            width: 95vw;
+            height: 790px;
+            border: 2px solid black;
+            margin-left: 50px;
+            margin-top: 49px;
+            display: flex;
+            background-color: var(--motha);
+
+        }
+
+        .chota1 {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            /* margin-left: 169px; */
+            margin-left: 429px;
+            margin-top: 222px;
+            background-color: var(--chota1);
+
+        }
+
+        .chota2 {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            /* margin-left: 169px; */
+            margin-left: 362px;
+            margin-top: 222px;
+            background-color: var(--chota2);
+            
+
+        }
+
+        .circle {
+            height: 85px;
+            width: 85px;
+            border-radius: 50%;
+            border: 2px solid black;
+            display: inline-block;
+            margin-left: 1710px;
+            /* margin-bottom: auto; */
+            margin-top: 682px;
+            background-color: var(--circle);
+            position:fixed ;
+        }
+
+        .wellcome {
+            width: 80vw;
+            height: 200px;
+            border: 2px solid rgb(255, 255, 255);
+            margin-left: 182px;
+            margin-top: 59px;
+            border-radius: 108px;
+            
+
+        }
+
+        .text {
+            margin-left: 246px;
+            margin-top: 77px;
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        .footer {
+            height: 100px;
+            width: 100vw;
+            border: 2px solid black;
+            margin-top: 200px;
+            background-color: var(--footer);
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav"></nav>
+    <div class="motha">
+        <div class="chota1"></div>
+        <div class="chota2"></div>
+        <div class="circle"></div>
+    </div>
+
+    <nav class="wellcome">
+        <nav class="text">
+            Wellcome to Sigma Web Developement Course
+        </nav>
+    </nav>
+
+    <nav class="footer"></nav>
+</body>
+
+</html>
