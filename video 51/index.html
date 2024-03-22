@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animations</title>
+    <style>
+        .container {
+            position: relative;
+            width: 90vw;
+            height: 90vh;
+            background-color: blue;
+        }
+
+        .ball { 
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+           
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+           animation: sujalx 3s linear infinite,
+                     sujaly 1s ease-out infinite alternate;
+                        
+        }
+
+        @keyframes sujalx {
+            from {
+                left: 0%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes sujaly {
+            from {
+                bottom: 0%;
+            }
+            to {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

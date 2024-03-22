@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container {
+            height: 80vh;
+            width: 30vw;
+            background-color: cadetblue;
+        }
+
+        .box {
+            height: 45px;
+            width: 34px;
+            background-color: aqua;
+            /* animation: sujal;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-play-state: paused; */
+            
+            animation: sujal 3s ease-out 2s 3 alternate forwards,
+                        shreya 3s ease-out 2s 3 alternate forwards;
+        }
+
+        @keyframes sujal {
+            from {
+                background-color: blueviolet;
+            }
+
+            to {
+                transform: translateX(1000px);
+                background-color: orange;
+            }
+        }
+
+        @keyframes shreya {
+            20%{
+                background-color: white;
+            }
+            40%{
+                background-color: rgb(124, 25, 25);
+            }
+            60%{
+                background-color: rgb(37, 57, 238);
+            }
+            80%{
+                background-color: rgb(46, 207, 13);
+            }
+            100%{
+                background-color: rgb(235, 20, 91);
+                color: red;
+                rotate: 50deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

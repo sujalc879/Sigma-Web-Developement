@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 80vw;
+            background-color: cadetblue;
+            position: relative;
+        }
+
+        .circle {
+            height: 60px;
+            width: 60px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 50px;
+            animation: sujal 2s linear 1s infinite alternate backwards;
+                         /* sunil 2s linear 1s infinite alternate backwards, */
+                         
+
+            
+
+        }
+
+            
+        
+
+        @keyframes sujal {
+            from {
+                left: 0%;
+            }
+            to {
+                left: 100%;
+        }
+    }
+
+        /* @keyframes sunil {
+            from {
+
+            }
+            to {
+                transform: translateX(500px);
+            }
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
