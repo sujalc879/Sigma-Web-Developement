@@ -1,0 +1,40 @@
+<!-- Create a glowing Bulb effect using classlist toggle Method in Javascript -->
+
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bulb-on {
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+        }
+        .bulb-off {
+            height: 400px;
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+     <div id="bulb" class="bulb-on bulb-off"></div>
+
+     <script>
+
+        setInterval(() => {
+            document.querySelector("#bulb").classList.toggle("bulb-on");
+        },500);
+      
+
+     </script>
+</body>
+</html>

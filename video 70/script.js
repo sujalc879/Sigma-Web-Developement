@@ -1,4 +1,5 @@
  
+
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -8,4 +9,6 @@ function getRandomColor() {
     return color
 }
 
-// document.querySelector(".box").style.backgroundColor = getRandomColor()
+for (let i = 0; i < 5 ; i++) {
+  document.body.children[0].children[i].style.backgroundColor = getRandomColor() ;
+}

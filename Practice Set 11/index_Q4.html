@@ -1,0 +1,61 @@
+<!-- See if Student is an instance of Human Using instanceof keyword -->
+
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        class Human {
+            constructor() {
+                console.log("human is Created...");
+            }
+
+            oxygen() {
+                console.log("oxygen gheto..");
+                
+            }
+
+            think() {
+                console.log("humans can think very well than others...");
+                
+            }
+        }
+
+        class student extends Human {
+            constructor() {
+                super()
+                console.log("Student is Created...");
+                
+            }
+
+            write() {
+                console.log("students can write");
+                
+            }
+
+            fight() {
+                console.log("students can fight");
+                
+            }
+
+            think() {
+                console.log("students can think very well than others...");
+                
+            }
+        }
+
+        let h = new Human();
+        console.log(h);
+        
+
+        let s = new student();
+        console.log(s);
+        
+        
+     </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- Write a Program to Load a JavaScript file in a browser using Promises. Use .then() to display  an alert When the load is Complete -->
+
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let prom = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("hello new Promise");
+                resolve();
+            }, 5000);
+        })
+
+        prom.then(() => {
+          alert("script is excuted Successfully...")
+        }
+        )
+     </script>
+</body>
+</html>

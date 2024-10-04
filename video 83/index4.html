@@ -1,0 +1,70 @@
+<!--
+   4. The Password Validator:
+    You are building a password validation feature. Create a function that checks if a given password meets the following criteria: at least 8 characters long, contains both uppercase and lowercase letters, and includes at least one digit.
+     -->
+
+<!DOCTYPE html>
+<html lang=`en`>
+
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+       function validation(password) {
+      
+       
+
+        let Lletter = password.replace(/[^a-z]/g, '');
+
+        let Uletter = password.replace(/[^A-Z]/g, '');
+
+        let number = password.replace(/[^0-9]/g, '');
+
+        let ogn = parseInt(number)
+
+
+
+        if (password.length >= 8) {
+
+            if (Lletter && Uletter) {
+                
+                if (ogn || ogn == 0) {
+                    console.log("your Password Has Been Saved Successfully");
+                    
+                } else {
+                    console.log("Enter atleast One Digit");
+                    
+                }
+                
+            }
+            else {
+                console.log("Enter both Uppercase & Lowercase Characters");
+                
+            }
+
+        } else {
+        console.log("enter a atleast 8 characters");
+
+        }
+
+    }
+
+    validation("Sujal.879")
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+

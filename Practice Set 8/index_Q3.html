@@ -1,0 +1,34 @@
+<!-- Create a Website Which is Capable of storing Bookmarks of Your Favorite Websites Using event listener -->
+
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+</head>
+<body>
+     <button>google</button>
+     <button>whatsapp</button>
+     <button>instagram</button>
+
+     <script>
+
+        let btn1 = document.getElementsByTagName("button")[0];
+        btn1.addEventListener("click", () => {
+          location.href = "https://google.com";
+        })
+
+        let btn2 = document.getElementsByTagName("button")[1];
+        btn2.addEventListener("click", () => {
+          location.href = "https://whatsapp.com";
+        })
+
+        let btn3 = document.getElementsByTagName("button")[2];
+        btn3.addEventListener("click", () => {
+          location.href = "https://instagram.com";
+        })
+        
+     </script>
+</body>
+</html>

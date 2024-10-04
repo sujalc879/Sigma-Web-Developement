@@ -1,0 +1,29 @@
+<!-- Write the same Program from Previous Question & use async/await syntax -->
+
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+</head>
+<body>
+     <script>
+
+
+(async function() {
+    let prom = new Promise((resolve, reject) => {
+               setTimeout(() => {
+                   console.log("hello new Promise");
+                   resolve();
+               }, 5000);
+           })
+
+           await prom;
+           alert("script is excuted Successfully...");
+})(); 
+         
+       
+     </script>
+</body>
+</html>

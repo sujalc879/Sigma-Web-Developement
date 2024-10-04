@@ -1,0 +1,36 @@
+<!-- Write a Method to add two Complex Numbers in the above Class -->
+ 
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        class cn {
+            constructor(real, imaginary) {
+                this.real = real;
+                this.imaginary = imaginary;
+            }
+
+            add(num) {
+                this.real = this.real + num.real
+                this.imaginary = this.imaginary + num.imaginary
+            }
+        }
+
+        let C = new cn(2, 4)
+        let D = new cn(3, 5)
+
+        C.add(D)
+        
+        console.log(C.real, C.imaginary);
+        
+        
+        
+        
+     </script>
+</body>
+</html>

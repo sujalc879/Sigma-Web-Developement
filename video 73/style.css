@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+.card {
+    width: 90vw;
+    height: 100px;
+    background-color: #283232;
+    margin: 50px auto;
+    border-radius: 7px;
+
+    display: grid;
+    grid-template-columns: [thumbnail] 180px 200px 150px 200px auto;
+    grid-template-rows: [start] 40px [middle] 53px auto [end];
+    }
+    
+    .card img {
+        height: 60%;
+        width: auto;
+        margin: 5px;
+        border-radius: 7px;
+        box-sizing: border-box;
+        border: 1px solid white;
+        grid-row: start/end;
+        grid-column: 1/2;
+        
+    }
+
+    .title {
+        grid-row: 1 / 2;
+        grid-column: 2 / 6;
+        display: flex;
+        align-items: center;
+        font-size: medium;
+        font-weight: bold;
+       
+        
+    }
+
+    .cName {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        font-size: small;
+        color: #dfdede;
+    }
+    .views {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        display: flex;
+        align-items: center;
+        font-size: small;
+        color: #dfdede;
+    }
+    .monthsOld {
+        grid-row: 2/3;
+        grid-column: 4/5;
+        display: flex;
+        align-items: center;
+        font-size: small;
+        color: #dfdede;
+        
+    }
+
+    .duration {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        color: black;
+        font-size: smaller;
+        font-weight: bolder;
+        display: grid;
+        justify-content: end;
+        align-items: end;
+        margin: 0px 20px 0px 0px;
+        
+        
+       
+    }
+
+    .duration span {
+        background-color: rgba(0, 0, 0, 0.753);
+        border-radius: 3px;
+        padding: 2px;
+    }

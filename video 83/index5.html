@@ -1,0 +1,50 @@
+<!-- 5. The Sum Selector:
+   You are working on a function that should sum all numbers in an array until it encounters a negative number. Write a function that performs this summation.
+    -->
+
+    <!DOCTYPE html>
+    <html lang=`en`>
+    <head>
+        <meta charset=`UTF-8`>
+        <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+        <title>Document</title>
+    </head>
+    <body>
+         <script>
+
+            function addition(num) {
+
+            let sum = 0;
+
+            for (let i = 0; i < num.length; i++) {
+              
+               if (num[i] < 0) {
+                  break;
+               }
+
+               sum+=num[i];
+            }
+            return sum
+
+         }
+
+         let input = [4, 5, 5, -4, 4, -8]; 
+
+         console.log(addition(input));
+            
+      
+      
+
+
+         
+         
+        
+         
+           
+            
+
+            
+            
+         </script>
+    </body>
+    </html>

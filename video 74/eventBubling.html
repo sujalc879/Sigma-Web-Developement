@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: rgb(150, 173, 47);
+            padding: 14px;
+            margin: 14px;
+        }
+        .container {
+            background-color: rgb(208, 255, 0);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+
+    <script>
+
+        document.querySelector(".child").addEventListener("click", (element) => {
+           console.log(element.stopPropagation())
+            alert("child was clicked");
+        });
+        document.querySelector(".childContainer").addEventListener("click", (element) => {
+            element.stopPropagation()
+            alert("childContainer was clicked");
+        });
+        document.querySelector(".container").addEventListener("click", (element) => {
+            element.stopPropagation()
+            alert("container was clicked");
+        });
+
+        function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+         color += letters[Math.floor(Math.random()*16)];
+    }
+    return color
+}
+        setTimeout((e) => {
+          
+            document.querySelector(".child").style.backgroundColor = getRandomColor() ;
+        }, 1000);
+        setTimeout((e) => {
+            document.querySelector(".childContainer").style.backgroundColor = getRandomColor() ;
+           
+        }, 2000);
+        setTimeout((e) => {
+            document.querySelector(".container").style.backgroundColor = getRandomColor() ;
+        }, 3000);
+
+
+    </script>
+</body>
+</html>

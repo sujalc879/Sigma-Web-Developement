@@ -1,0 +1,35 @@
+<!-- Use getters & Setters to Set & get The real & imaginary Parts of the complex Number -->
+
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <title>Document</title>
+</head>
+<body>
+     
+    <script>
+        class complex {
+           constructor(real, imaginary) {
+            this.real = real
+            this.imaginary = imaginary
+           }
+
+           get name() {
+            return this._real
+            return this._imaginary
+           }
+
+           set name(real) {
+            this._real = real
+            this._imaginary = imaginary
+           }
+        }
+
+        let n = new complex(34, 45)
+        console.log(`${n.real} + ${n.imaginary}i`);
+        
+    </script>
+</body>
+</html>
